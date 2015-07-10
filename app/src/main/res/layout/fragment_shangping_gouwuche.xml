@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+            android:layout_above="@+id/layout2">
+
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.5">
+                <LinearLayout android:gravity="center" android:background="@color/bg_common" android:paddingLeft="@dimen/padding_small" android:paddingTop="@dimen/padding_verySmall" android:paddingRight="@dimen/padding_small" android:paddingBottom="@dimen/padding_verySmall" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_home_search" android:background="@drawable/bg_input01" android:paddingLeft="@dimen/padding_small" android:paddingRight="@dimen/padding_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_search" />
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_small" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_home_ping" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pqicon_bg" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal"
+                        android:id="@+id/linearLayout3"
+                        android:background="@color/app_top_title"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/black_20sp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="购物车"
+                            android:singleLine="true"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#ffffffff" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView64"
+                            android:src="@drawable/ic_chevron_left_dark"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="false"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <ListView android:id="@+id/plv_home_right" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="match_parent" android:divider="@null"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:padding="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textColor="@color/gray_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计:" />
+
+                <TextView
+                    android:textSize="16.0sp"
+                    android:textColor="@color/money_red"
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥ 17.40" />
+            </LinearLayout>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/button"
+                android:background="@drawable/button_black"
+                android:layout_width="wrap_content"
+                android:layout_height="36.0dip"
+                android:text="结算"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/layout2"
+            android:background="#ffffffff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView2"
+                android:background="#ffefefef" />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/button2"
+                android:background="@drawable/button_black"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="合计￥160去结算"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView3"
+                android:background="#ffefefef"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
